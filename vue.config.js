@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 // yarn add svg-sprite-loader -D
 
 const path = require('path')
