@@ -1,5 +1,4 @@
 import Vue from 'vue'
-// import Home from '../views/Home.vue'
 import VueRouter from 'vue-router'
 import Money from '@/views/Money.vue'
 import Labels from '@/views/Labels.vue'
