@@ -40,6 +40,7 @@ export default {
   .buttons {
     @extend %clearFix;
     > button {
+      font-size: 16px;
       width: 25%;
       height: 64px;
       float: left;
