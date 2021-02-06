@@ -1,6 +1,6 @@
 <template>
   <svg class="icon">
-    <use :xlink:href="'#' + iconName" />
+    <use :xlink:href="'#' + name" />
   </svg>
 </template>
 
@@ -13,7 +13,7 @@ try {
   console.log(error)
 }
 export default {
-  props: ['iconName'],
+  props: ['name'],
   name: 'Icon',
 }
 </script>
