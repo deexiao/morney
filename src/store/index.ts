@@ -16,7 +16,7 @@ const store = new Vuex.Store({
     setCurrentTag(state, id: string) {
       state.currentTag = state.tagList.filter(t => t.id === id)[0];
     },
-    updateTag(state, payload: { id: string, name: string }) {
+    updateTag(state, payload: { id: string; name: string }) {
       const {id, name} = payload;
       const idList = state.tagList.map(item => item.id);
       if (idList.indexOf(id) >= 0) {
