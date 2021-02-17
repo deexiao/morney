@@ -19,7 +19,8 @@ export default {
 .layout-wrapper {
   display: flex;
   flex-direction: column;
-  height: -webkit-fill-available;
+  height: 100vh;
+  // height: -webkit-fill-available;
 }
 .content {
   overflow: auto;
