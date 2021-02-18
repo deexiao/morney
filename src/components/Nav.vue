@@ -28,6 +28,7 @@ nav {
   display: flex;
   flex-direction: row;
   font-size: 12px;
+
   > .item {
     padding: 2px 0;
     width: 33.33333%;
@@ -35,6 +36,8 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: rgb(24, 26, 27);
+    color: rgb(199, 195, 189);
     .icon {
       width: 32px;
       height: 32px;

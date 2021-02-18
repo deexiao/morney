@@ -40,15 +40,16 @@ export default class Labels extends mixins(TagHelper) {
 
 <style lang="scss" scoped>
 .tags {
-  background: white;
+  background: rgb(24, 26, 27);
   font-size: 16px;
   padding-left: 16px;
   > .tag {
+    color: rgb(199, 195, 189);
     min-height: 44px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid rgb(56, 60, 62);
     svg {
       width: 18px;
       height: 18px;

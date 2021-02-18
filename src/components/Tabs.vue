@@ -45,6 +45,9 @@ export default class Tabs extends Vue {
   text-align: center;
   font-size: 24px;
   &-item {
+    background: rgb(58, 62, 64);
+    color: rgb(199, 195, 189);
+
     width: 50%;
     height: 64px;
     display: flex;
@@ -58,7 +61,7 @@ export default class Tabs extends Vue {
       left: 0;
       width: 100%;
       height: 4px;
-      background: #333;
+      background: #999;
     }
   }
 }

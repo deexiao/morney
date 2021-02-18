@@ -76,10 +76,14 @@ export default class NumberPad extends Vue {
     padding: 9px 16px;
     text-align: right;
     height: 72px;
+    color: rgb(199, 195, 189);
   }
   .buttons {
     @extend %clearFix;
+
     > button {
+      color: rgb(199, 195, 189);
+
       width: 25%;
       height: 64px;
       float: left;
@@ -94,32 +98,49 @@ export default class NumberPad extends Vue {
       }
       $bg: #f2f2f2;
       &:nth-child(1) {
-        background: $bg;
+        background: rgb(31, 33, 34);
       }
-      &:nth-child(2),
+      &:nth-child(2) {
+        background: rgb(37, 40, 42);
+      }
+      &:nth-child(3) {
+        background: rgb(43, 46, 48);
+      }
+      &:nth-child(4) {
+        background: rgb(49, 53, 55);
+      }
       &:nth-child(5) {
-        background: darken($bg, 4%);
+        background: rgb(37, 40, 42);
       }
-      &:nth-child(3),
-      &:nth-child(6),
+
+      &:nth-child(6) {
+        background: rgb(43, 46, 48);
+      }
+      &:nth-child(7) {
+        background: rgb(49, 53, 55);
+      }
+      &:nth-child(8) {
+        background: rgb(55, 59, 61);
+      }
       &:nth-child(9) {
-        background: darken($bg, 4 * 2%);
+        background: rgb(43, 46, 48);
       }
-      &:nth-child(4),
-      &:nth-child(7),
+
       &:nth-child(10) {
-        background: darken($bg, 4 * 3%);
+        background: rgb(49, 53, 55);
       }
-      &:nth-child(8),
-      &:nth-child(11),
-      &:nth-child(13) {
-        background: darken($bg, 4 * 4%);
-      }
-      &:nth-child(14) {
-        background: darken($bg, 4 * 5%);
+
+      &:nth-child(11) {
+        background: rgb(55, 59, 61);
       }
       &:nth-child(12) {
-        background: darken($bg, 4 * 6%);
+        background: rgb(66, 71, 74);
+      }
+      &:nth-child(13) {
+        background: rgb(55, 59, 61);
+      }
+      &:nth-child(14) {
+        background: rgb(61, 65, 68);
       }
     }
   }

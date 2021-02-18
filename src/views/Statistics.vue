@@ -1,6 +1,7 @@
 <template>
   <Layout>
     <Tabs
+      class="recordTypeList"
       class-prefix="type"
       :data-source="recordTypeList"
       :value.sync="type"
@@ -108,14 +109,15 @@ export default class Statistics extends Vue {
 
 <style scoped lang="scss">
 .noResult {
+  color: rgb(199, 195, 189);
   padding: 16px;
   text-align: center;
 }
 ::v-deep {
   .type-tabs-item {
-    background: #c4c4c4;
+    background: rgb(58, 62, 64);
     &.selected {
-      background: white;
+      background: rgb(24, 26, 27);
       &::after {
         display: none;
       }
@@ -134,14 +136,20 @@ export default class Statistics extends Vue {
 }
 .title {
   @extend %item;
+  color: rgb(199, 195, 189);
 }
 .record {
-  background: white;
+  background: rgb(24, 26, 27);
+  color: rgb(199, 195, 189);
+
   @extend %item;
 }
 .notes {
   margin-right: auto;
   margin-left: 16px;
   color: #999;
+}
+.recordTypeList {
+  color: rgb(199, 195, 189);
 }
 </style>

@@ -32,8 +32,11 @@ export default class FormItem extends Vue {
   padding-left: 16px;
   display: flex;
   align-items: center;
+  background: rgb(30, 32, 33);
+
   .name {
     padding-right: 16px;
+    color: rgb(199, 195, 189);
   }
   input {
     height: 40px;
